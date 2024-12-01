@@ -1,0 +1,180 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpg') center/cover no-repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.hero-section .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Section Heading Box Styling */
+h2 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    background: #0056b3; /* Main theme color */
+    padding: 1rem 0;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2::before,
+h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+h2::before {
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+h2::after {
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+
+h2 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    background: #0056b3; /* Main theme color */
+    padding: 1rem 0;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Events Section Cards */
+.card-image-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image-wrapper img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+/* About Us Section */
+#about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+form {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form .btn {
+    background: #0056b3;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form .btn:hover {
+    background: #004494;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #ddd;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+.contact-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.call-link {
+    text-decoration: none;
+    color: #0056b3; /* Theme color */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Spacing between icon and number */
+}
+
+.call-link:hover {
+    color: #004494; /* Hover color */
+    text-decoration: underline;
+}
+
+/* Optional: Size and spacing for the call icon */
+.call-link i {
+    font-size: 1.5rem;
+}
+h2 i {
+    font-size: 1.5rem; /* Adjust the icon size */
+    color: #ffffff; /* Theme color for the icon */
+    margin-right: 0.5rem; /* Spacing between the icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
